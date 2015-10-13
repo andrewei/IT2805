@@ -65,10 +65,21 @@ ul {
     width:60%;
     margin:0 auto;
     text-align:center;
-    height:30em;
+    height:auto;
     text-align:left;
 	background-color:black;
     color:white; /*#808080*/
+}
+
+.content h1{
+    padding-left:3em;
+    padding-right:3em;
+}
+
+.content h3{
+	
+    padding-left:3em;
+    padding-right:3em;
 }
 
 .content p{
