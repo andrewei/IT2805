@@ -4,7 +4,7 @@ header{
 
 header .logo{
     width:10%;
-    height:10%;
+    height:auto%;
     display:inline;
     -webkit-filter: drop-shadow(5px 5px 15px #ff6d04);
     filter: drop-shadow(5px 5px 15px #ff6d04);
@@ -38,7 +38,7 @@ li {
 .navigation{
     border-width:2px;
     border-style:solid;
-    border-color:#808080;
+    border-color:white; /*#808080*/
     width:60%;
     margin:0 auto;
     text-align:center;
@@ -61,13 +61,13 @@ li {
 .content{
     border-width:2px;
     border-style:solid;
-    border-color:#808080;
+    border-color:white;
     width:60%;
     margin:0 auto;
     text-align:center;
     height:30em;
     text-align:left;
-    color:white;
+    color:white; /*#808080*/
 }
 
 .content p{
@@ -114,6 +114,9 @@ body{
 }
 
 footer{
-    color:#808080;
+    color:white; /*#808080*/
+	background-color:black;
+	margin:0 auto;	
+	width: 60.2%;
 }
 
