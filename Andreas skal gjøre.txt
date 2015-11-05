@@ -1,0 +1,22 @@
+Events 
+	event ubegrenset
+		navn    		1 stykk
+		dato    		2-3 dager flere datoer.
+		facebooklink		1 per event
+		
+		game	opp til 10
+			bilde på spill/navn på spill
+			Description. Legg inn hver gang
+			resultside link 	kan være flere per spill
+		/game
+		
+	/event
+Events
+
+
+
+Lag kode for å laste ned xml client side
+
+Lag gui som ser grei ut.
+
+Skal lages av Andreas 
