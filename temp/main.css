@@ -1,26 +1,52 @@
-
-
-header{
-    text-align:center;
+body{
+    /*background-image:url("images/bg.jpg");*/
+    background-color:#000000;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-attachment:fixed;
 }
 
-header .logo{
-    width:10%;
-    height:auto%;
+body > header{
+    text-align:center;
+    width: 100%;
+}
+
+body > .navigation{
+    text-align:center;
+    width: 60%;
+}
+
+header > .logo{
     display:inline;
+    width:15%;
+    height:auto%;
     -webkit-filter: drop-shadow(5px 5px 15px #ff6d04);
     filter: drop-shadow(5px 5px 15px #ff6d04);
-    margin:2em 2em 0em 2em;
+    margin:1em 2.3% 0em 2.3%;
+    border-radius: 100%;
+    border:2px solid #ff6a00;
+    float:left;
 }
 
-header .name{
+header > .name{
     display:inline;
     text-transform: uppercase;
-    font-size:4em;
+    font-size:5em;
+    line-height:2em;
     font-weight:bolder;
+    vertical-align:middle;
     color:#ffffff;
     -webkit-filter: drop-shadow(7px 7px 15px #ff6d04);
     filter: drop-shadow(7px 7px 15px #ff6d04);
+}
+
+footer{
+    text-align: center;
+    color:white; /*#808080*/
+	background-color:black;
+	margin:0 auto;	
+	width: 60%;
+    border:2px solid white;
 }
 
 ul {
@@ -38,12 +64,9 @@ li {
 }
 
 .navigation{
-    border-width:2px;
-    border-style:solid;
-    border-color:white; /*#808080*/
+    border:2px solid white;
     width:60%;
     margin:0 auto;
-    text-align:center;
 }
 
 .navigation .nav{
@@ -62,9 +85,7 @@ li {
 
 .content{
     background-color: black;
-    border-width:2px;
-    border-style:solid;
-    border-color:white;
+    border:2px solid white;
     width:60%;
     margin:0 auto;
     text-align:center;
@@ -106,20 +127,3 @@ li {
     width:100px;
     height:50px;
 }
-
-body{
-    background-image:url("images/bg.jpg");
-    background-color:#000000;
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-attachment:fixed;
-    text-align:center;
-}
-
-footer{
-    color:white; /*#808080*/
-	background-color:black;
-	margin:0 auto;	
-	width: 60.2%;
-}
-
