@@ -1,10 +1,30 @@
 <events> 
-	<event> ubegrenset
+	<event> 												<!--    ubegrenset -->
 		<name>TestName</name>    							<!--	1 stykk -->
 		<date>19.10.2016</date>    							<!--	2-3 dager flere datoer. -->
 		<facebooklink>Test EventLint</facebooklink>						<!--	1 per event -->
 		<game>												<!--  	opp til 10 stykk -->
-			<picture>No Test IMAGE</picture> 							<!-- 	Bilde på spill 1stk -->
+			<picture>No Test IMAGE 0 0</picture> 							<!-- 	Bilde på spill 1stk -->
+			<description>Test Description</description>						<!-- 	Beskrivelse, 1stk 	Legg inn hver gang -->
+			<results>www.google.com</results>          					<!-- 	resultside link 	kan være flere per spill -->
+		</game>
+		<game>												<!--  	opp til 10 stykk -->
+			<picture>No Test IMAGE 0 1</picture> 							<!-- 	Bilde på spill 1stk -->
+			<description>Test Description</description>						<!-- 	Beskrivelse, 1stk 	Legg inn hver gang -->
+			<results>www.google.com</results>          					<!-- 	resultside link 	kan være flere per spill -->
+		</game>
+	</event>
+	<event>                                             <!--  ubegrenset -->
+		<name>TestName</name>    							<!--	1 stykk -->
+		<date>19.10.2016</date>    							<!--	2-3 dager flere datoer. -->
+		<facebooklink>Test EventLint</facebooklink>						<!--	1 per event -->
+		<game>												<!--  	opp til 10 stykk -->
+			<picture>No Test IMAGE 1 0</picture> 							<!-- 	Bilde på spill 1stk -->
+			<description>Test Description</description>						<!-- 	Beskrivelse, 1stk 	Legg inn hver gang -->
+			<results>www.google.com</results>          					<!-- 	resultside link 	kan være flere per spill -->
+		</game>
+		<game>												<!--  	opp til 10 stykk -->
+			<picture>No Test IMAGE 1 1</picture> 							<!-- 	Bilde på spill 1stk -->
 			<description>Test Description</description>						<!-- 	Beskrivelse, 1stk 	Legg inn hver gang -->
 			<results>www.google.com</results>          					<!-- 	resultside link 	kan være flere per spill -->
 		</game>
