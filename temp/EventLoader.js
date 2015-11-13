@@ -1,15 +1,20 @@
 var xmlPlacement = "Events.xml";
 window.addEventListener('load', init);
+var maxEventsToShow = 3;
+var newEvents = true;
+var today;
+var htmlEventTable;
 
 function init(){
-	//loads xml file with stored information on events
-	var xmlDoc = loadXML(xmlPlacement);
-	//loads eventTable from html
-	var htmlEventTable = document.getElementById("eventLoader");
-	//removes static information from webpage
+	htmlEventTable = document.getElementById("eventLoader");
 	while (htmlEventTable.firstChild !== null) {
 	    htmlEventTable.removeChild(htmlEventTable.firstChild);
 	}
+	//create form with buttons
+	createForm(htmlEventTable);
+	//loads xml file with stored information on events
+	var xmlDoc = loadXML(xmlPlacement);
+	
 	//create eventList from the xml
 	var events = createEventList(xmlDoc);
 	console.log(events);
@@ -17,22 +22,126 @@ function init(){
 	console.log("Printing htmlEventTable");
 	console.log(htmlEventTable);
 	//update html from events
+}
+
+
+function createForm(htmlEventTable){
+	var formDiv = document.createElement('div');
+	formDiv.id = 'form';
+
+
+	var buttonNEW = document.createElement('BUTTON');
+	buttonNEW.setAttribute("onclick","setNewEventsAndUpdate(true);");
+	var t = document.createTextNode("Show new events");       // Create a text node
+	buttonNEW.appendChild(t); 
+
+	var buttonRecent = document.createElement('BUTTON');
+	buttonRecent.setAttribute("onclick","setNewEventsAndUpdate(false);");
+
+	t = document.createTextNode("Show recent events");
+	buttonRecent.appendChild(t); 
+
+	formDiv.appendChild(buttonRecent);
+	formDiv.appendChild(buttonNEW);
+
+	htmlEventTable.appendChild(formDiv);
 
 }
 
+
+
+function getCurrentDate(){
+
+	var q = new Date();
+	var m = q.getMonth();
+	var d = q.getDate();
+	var y = q.getFullYear();
+
+	today = new Date(y,m,d);
+	return today;
+}
+
+function compaireDate(today, eventDate){
+	if(today>eventDate){
+	    return false;
+	}
+	else{
+	    return true;
+	}
+	//console.log("dateOfEvent:" + eventDate + " date now : "  + today);
+}
 
 //	not done, commented out because of a git push.
 function createEventList(xmlDoc){
+	console.log("printing current day" + getCurrentDate());
 	var events = [];
 	var x = xmlDoc.documentElement.childNodes;
-	for(var i = 0; i < x.length; i++) {
-		if(x[i].nodeName == "event"){
-			events.push(x[i]);
-		}
-		//events[i] = x[i];
-    }
+	console.log("x structure");
+	console.log(x);
+
+	//loop other way if new events, to sort right.
+	if(newEvents == false){
+		for(var i = 0; i < x.length; i++) {
+			if(x[i].nodeName == "event"){
+				
+				//creates a Date object from the event to see if it should be included.
+				dateEvent = new Date(x[i].getElementsByTagName("date")[0].innerHTML);
+				var isthisaNewEvent = compaireDate(today, dateEvent);
+				console.log("show new events :" + newEvents + " is this a new event? :" + isthisaNewEvent);
+				if(newEvents == true && isthisaNewEvent == true){
+					if(events.length < maxEventsToShow){
+						events.push(x[i]);
+					}	
+				}
+				else if (newEvents == false && isthisaNewEvent == false){ 
+					if(events.length < maxEventsToShow){
+						events.push(x[i]);
+					}
+				}
+				else {
+					continue;
+				}
+			}
+	    }
+	}
+	else {
+		for(var i = x.length-1; i >= 0 ; i--) {
+			if(x[i].nodeName == "event"){
+				
+				//creates a Date object from the event to see if it should be included.
+				dateEvent = new Date(x[i].getElementsByTagName("date")[0].innerHTML);
+				var isthisaNewEvent = compaireDate(today, dateEvent);
+				console.log("show new events :" + newEvents + " is this a new event? :" + isthisaNewEvent);
+				if(newEvents == true && isthisaNewEvent == true){
+					if(events.length < maxEventsToShow){
+						events.push(x[i]);
+					}	
+				}
+				else if (newEvents == false && isthisaNewEvent == false){ 
+					if(events.length < maxEventsToShow){
+						events.push(x[i]);
+					}
+				}
+				else {
+					continue;
+				}
+			}
+	    }
+	}
     return events;
 }
+
+//should new or old events be shown.
+function setNewEvents(boolValue){
+	newEvents = boolValue;
+}
+
+function setNewEventsAndUpdate(boolValue){
+	setNewEvents(boolValue);
+	init();
+}
+
+
 
 function loadXML(name){
 	var req = new XMLHttpRequest();
@@ -106,10 +215,6 @@ function createNode(event, htmlEventTable){
 	}
 
 	elementDivGames.className = 'elementDivGames';
-
-	//var ElementDivDate = document.createElement('div');
-	//var date = document.createTextNode(event.getElementsByTagName("date")[0].innerHTML);
-
 	eventDiv.appendChild(elementDivName);
 	eventDiv.appendChild(elementDivDate);
 	eventDiv.appendChild(elementDivFacebookLink);

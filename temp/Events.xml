@@ -1,32 +1,111 @@
-<events> 
-	<event> 												<!--    ubegrenset -->
-		<name>TestName</name>    							<!--	1 stykk -->
-		<date>19.10.2016</date>    							<!--	2-3 dager flere datoer. -->
-		<facebooklink>Test EventLint</facebooklink>						<!--	1 per event -->
-		<game>												<!--  	opp til 10 stykk -->
-			<picture>No Test IMAGE 0 0</picture> 							<!-- 	Bilde på spill 1stk -->
-			<description>Test Description</description>						<!-- 	Beskrivelse, 1stk 	Legg inn hver gang -->
-			<results>www.google.com</results>          					<!-- 	resultside link 	kan være flere per spill -->
+<events>
+
+	<event>
+		<name>New Event 5</name>
+		<date>2016-06-25</date>
+		<facebooklink>Test EventLint</facebooklink>
+		<game>
+			<picture>GAME 1 0 0</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
 		</game>
-		<game>												<!--  	opp til 10 stykk -->
-			<picture>No Test IMAGE 0 1</picture> 							<!-- 	Bilde på spill 1stk -->
-			<description>Test Description</description>						<!-- 	Beskrivelse, 1stk 	Legg inn hver gang -->
-			<results>www.google.com</results>          					<!-- 	resultside link 	kan være flere per spill -->
+		<game>
+			<picture>GAME 0 1</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
 		</game>
 	</event>
-	<event>                                             <!--  ubegrenset -->
-		<name>TestName</name>    							<!--	1 stykk -->
-		<date>19.10.2016</date>    							<!--	2-3 dager flere datoer. -->
-		<facebooklink>Test EventLint</facebooklink>						<!--	1 per event -->
-		<game>												<!--  	opp til 10 stykk -->
-			<picture>No Test IMAGE 1 0</picture> 							<!-- 	Bilde på spill 1stk -->
-			<description>Test Description</description>						<!-- 	Beskrivelse, 1stk 	Legg inn hver gang -->
-			<results>www.google.com</results>          					<!-- 	resultside link 	kan være flere per spill -->
+
+	<event>
+		<name>New Event 4</name>
+		<date>2016-05-25</date>
+		<facebooklink>Test EventLint</facebooklink>
+		<game>
+			<picture>GAME 1 0 0</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
 		</game>
-		<game>												<!--  	opp til 10 stykk -->
-			<picture>No Test IMAGE 1 1</picture> 							<!-- 	Bilde på spill 1stk -->
-			<description>Test Description</description>						<!-- 	Beskrivelse, 1stk 	Legg inn hver gang -->
-			<results>www.google.com</results>          					<!-- 	resultside link 	kan være flere per spill -->
+		<game>
+			<picture>GAME 0 1</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
+		</game>
+	</event>
+
+	<event>
+		<name>New Event 3</name>
+		<date>2016-04-25</date>
+		<facebooklink>Test EventLint</facebooklink>
+		<game>
+			<picture>GAME 1 0 0</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
+		</game>
+		<game>
+			<picture>GAME 0 1</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
+		</game>
+	</event>
+
+	<event>
+		<name>New Event 2</name>
+		<date>2016-03-25</date>
+		<facebooklink>Test EventLint</facebooklink>
+		<game>
+			<picture>GAME 1 0 0</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
+		</game>
+		<game>
+			<picture>GAME 0 1</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
+		</game>
+	</event>
+	<event>
+		<name>New Event 1</name>
+		<date>2016-03-24</date>
+		<facebooklink>Test EventLint</facebooklink>
+		<game>
+			<picture>GAME 1 0 0</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
+		</game>
+		<game>
+			<picture>GAME 0 1</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
+		</game>
+	</event>
+	<event>
+		<name>Old Event 1</name>
+		<date>2014-03-25</date>
+		<facebooklink>Test EventLint</facebooklink>
+		<game>
+			<picture>GAME 1 0 0</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
+		</game>
+		<game>
+			<picture>GAME 0 1</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
+		</game>
+	</event>
+	<event>
+		<name>Old Event 2</name>
+		<date>2014-03-24</date>
+		<facebooklink>Test EventLint</facebooklink>
+		<game>
+			<picture>GAME 1 0 0</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
+		</game>
+		<game>
+			<picture>GAME 0 1</picture>
+			<description>Test Description</description>
+			<results>www.google.com</results>
 		</game>
 	</event>
 </events>
