@@ -1,6 +1,6 @@
 var xmlPlacement = "Events.xml";
 window.addEventListener('load', init);
-var maxEventsToShow = 3;
+var maxEventsToShow = 5;
 var newEvents = true;
 var today;
 var htmlEventTable;
@@ -30,25 +30,19 @@ function createForm(htmlEventTable){
 	formDiv.id = 'form';
 
 
-	var buttonNEW = document.createElement('BUTTON');
-	buttonNEW.setAttribute("onclick","setNewEventsAndUpdate(true);");
+	var buttonNew = document.createElement('BUTTON');
+	buttonNew.setAttribute("onclick","setNewEventsAndUpdate(true);");
 	var t = document.createTextNode("Show new events");       // Create a text node
-	buttonNEW.appendChild(t); 
+	buttonNew.appendChild(t);
 
 	var buttonRecent = document.createElement('BUTTON');
 	buttonRecent.setAttribute("onclick","setNewEventsAndUpdate(false);");
-
 	t = document.createTextNode("Show recent events");
 	buttonRecent.appendChild(t); 
-
 	formDiv.appendChild(buttonRecent);
-	formDiv.appendChild(buttonNEW);
-
+	formDiv.appendChild(buttonNew);
 	htmlEventTable.appendChild(formDiv);
-
 }
-
-
 
 function getCurrentDate(){
 
@@ -180,7 +174,9 @@ function createNode(event, htmlEventTable){
 	elementDivDate.appendChild(date);
 
 	var elementDivFacebookLink = document.createElement('div');
-	var facebookLink = document.createTextNode(event.getElementsByTagName("facebooklink")[0].innerHTML);
+	var facebookLink = document.createElement('a');
+	facebookLink.innerHTML = "FacebookLink";
+	facebookLink.href = event.getElementsByTagName("facebooklink")[0].innerHTML;
 	elementDivFacebookLink.className = 'elementDivFacebookLink';
 	elementDivFacebookLink.appendChild(facebookLink);
 
@@ -192,7 +188,13 @@ function createNode(event, htmlEventTable){
 		elementDivGame.className = 'elementDivGame'; 
 
 		var gameChildPicture = document.createElement('div');
-		var picture = document.createTextNode(game.getElementsByTagName("picture")[0].innerHTML);
+		var picture = document.createElement('img');
+		picture.setAttribute("src", game.getElementsByTagName("picture")[0].innerHTML);
+		picture.setAttribute("height", "100");
+		picture.setAttribute("width", "120");
+		picture.setAttribute("alt", "Game");
+
+
 		gameChildPicture.appendChild(picture);
 		gameChildPicture.className = "gameChildPicture";
 
@@ -202,7 +204,9 @@ function createNode(event, htmlEventTable){
 		gameChildDescription.className = "gameChildPicture";
 	
 		var gameChildResults = document.createElement('div');
-		var results = document.createTextNode(game.getElementsByTagName("results")[0].innerHTML);
+		var results = document.createElement('a');
+		results.href = game.getElementsByTagName("results")[0].innerHTML;
+		results.innerHTML = "Game results";
 		gameChildResults.appendChild(results);
 		gameChildResults.className = "gameChildResults";
 

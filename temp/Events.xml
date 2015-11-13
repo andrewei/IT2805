@@ -2,110 +2,111 @@
 
 	<event>
 		<name>New Event 5</name>
-		<date>2016-06-25</date>
-		<facebooklink>Test EventLint</facebooklink>
+		<date>2016-07-25</date>
+		<facebooklink>http://www.google.com</facebooklink>
 		<game>
-			<picture>GAME 1 0 0</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>Game 1 Turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 		<game>
-			<picture>GAME 0 1</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>Game 1 Turnament</description>
+			<results>http://www.google.com</results>
 		</game>
+
 	</event>
 
 	<event>
 		<name>New Event 4</name>
 		<date>2016-05-25</date>
-		<facebooklink>Test EventLint</facebooklink>
+		<facebooklink>http://www.google.com</facebooklink>
 		<game>
-			<picture>GAME 1 0 0</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 		<game>
-			<picture>GAME 0 1</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 	</event>
 
 	<event>
 		<name>New Event 3</name>
 		<date>2016-04-25</date>
-		<facebooklink>Test EventLint</facebooklink>
+		<facebooklink>http://www.google.com</facebooklink>
 		<game>
-			<picture>GAME 1 0 0</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 		<game>
-			<picture>GAME 0 1</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 	</event>
 
 	<event>
 		<name>New Event 2</name>
 		<date>2016-03-25</date>
-		<facebooklink>Test EventLint</facebooklink>
+		<facebooklink>http://www.google.com</facebooklink>
 		<game>
-			<picture>GAME 1 0 0</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 		<game>
-			<picture>GAME 0 1</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 	</event>
 	<event>
 		<name>New Event 1</name>
 		<date>2016-03-24</date>
-		<facebooklink>Test EventLint</facebooklink>
+		<facebooklink>http://www.google.com</facebooklink>
 		<game>
-			<picture>GAME 1 0 0</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 		<game>
-			<picture>GAME 0 1</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>http://www.google.com</description>
+			<results>http://www.google.com</results>
 		</game>
 	</event>
 	<event>
 		<name>Old Event 1</name>
 		<date>2014-03-25</date>
-		<facebooklink>Test EventLint</facebooklink>
+		<facebooklink>http://www.google.com</facebooklink>
 		<game>
-			<picture>GAME 1 0 0</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 		<game>
-			<picture>GAME 0 1</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 	</event>
 	<event>
 		<name>Old Event 2</name>
 		<date>2014-03-24</date>
-		<facebooklink>Test EventLint</facebooklink>
+		<facebooklink>http://www.google.com</facebooklink>
 		<game>
-			<picture>GAME 1 0 0</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 		<game>
-			<picture>GAME 0 1</picture>
-			<description>Test Description</description>
-			<results>www.google.com</results>
+			<picture>images/melee.png</picture>
+			<description>melee turnament</description>
+			<results>http://www.google.com</results>
 		</game>
 	</event>
 </events>
