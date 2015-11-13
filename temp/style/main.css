@@ -1,0 +1,235 @@
+body{
+    /*background-image:url("images/bg.jpg");*/
+    background-color:#000000;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-attachment:fixed;
+}
+
+body > header{
+    text-align:center;
+    width: 100%;
+}
+
+body > .navigation{
+    text-align:center;
+    width: 60%;
+}
+
+header > .logo{
+    display:inline;
+    width:15%;
+    height:auto%;
+    -webkit-filter: drop-shadow(5px 5px 15px #ff6d04);
+    filter: drop-shadow(5px 5px 15px #ff6d04);
+    margin:1em 2.3% 0em 2.3%;
+    border-radius: 100%;
+    border:2px solid #ff6a00;
+    float:left;
+}
+
+header > .name{
+    display:inline;
+    text-transform: uppercase;
+    font-size:5em;
+    line-height:2em;
+    font-weight:bolder;
+    vertical-align:middle;
+    color:#ffffff;
+    -webkit-filter: drop-shadow(7px 7px 15px #ff6d04);
+    filter: drop-shadow(7px 7px 15px #ff6d04);
+}
+
+footer{
+    text-align: center;
+    color:white; /*#808080*/
+	background-color:black;
+	margin:0 auto;	
+	width: 60%;
+    border:2px solid white;
+}
+
+.nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+}
+
+.nav > ul > li {
+    width:20%;
+    float: left;
+    display:inline;
+}
+
+.navigation{
+    border:2px solid white;
+    width:60%;
+    margin:0 auto;
+}
+
+.navigation .nav{
+    width:100%;
+}
+.navigation .nav li a{
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content{
+    background-color: black;
+    border:2px solid white;
+    width:60%;
+    margin:0 auto;
+    text-align:center;
+    height:43em;
+    text-align:left;
+    color:white; /*#808080*/
+}
+
+.content p{
+    padding-left:3em;
+    padding-right:3em;
+}
+
+.content table{
+    text-align:center;
+    margin:0 auto;
+    margin-top:1em;
+    /*border:1px solid #808080;*/
+    height: 4em;
+	width:90%;
+    table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.content table tr{
+    text-align:center;
+    /*border:1px solid #808080;*/
+    height: 100%;
+	width: 100%;
+}
+
+.content table tr th{
+    vertical-align:middle;
+    height: 100%;
+	width: 18%;
+}
+
+.content .emblem{
+    width:100px;
+    height:50px;
+}
+
+#home{
+    width:100%;
+    margin:0 auto;
+    height:100%;
+    text-align:left;
+    color:white; /*#808080*/
+    position:relative;
+}
+
+#home > h1{
+    text-transform: uppercase;
+    font-size:4em;
+    line-height:1.5em;
+    margin-top:0;
+    display:inline;
+    padding:0.25em;
+}
+
+#home > p{
+    margin-top:0;
+    padding-left:2em;
+    padding-right:2em;
+}
+
+#home > img{
+    width:20%;
+    height:auto;
+    float:right;
+    padding:1em;
+    display:block;
+}
+
+#games{
+    width:100%;
+    margin:0 auto;
+    height:100%;
+    text-align:left;
+    color:white; /*#808080*/
+    position:relative;
+}
+
+#games > h1{
+    text-transform: uppercase;
+    font-size:4em;
+    line-height:1.5em;
+    margin-top:0;
+    display:inline;
+    padding:0.25em;
+}
+
+#games > p{
+    margin-top:0;
+    padding-left:2em;
+    padding-right:2em;
+}
+
+#games > ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    width:60%;
+    display:block;
+    /*left:20%;*/
+}
+
+#games > ul > li {
+    width:25%;
+    float: left;
+    display:inline;
+}
+
+#games > ul > li > a {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#games > ul > li > a > img {
+    width:100%;
+}
+
+#games > img{
+    width:40%;
+    height:auto;
+    float:right;
+    padding:1em;
+    display:block;
+}
+
+#games > iframe{
+    margin:0 auto;
+    width:60%;
+    height:55%;
+    display:block;
+    padding-top:3em;
+    position:absolute;
+    bottom:1em;
+    left:20%;
+}
