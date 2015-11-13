@@ -5,7 +5,7 @@ function init(){
 	//loads xml file with stored information on events
 	var xmlDoc = loadXML(xmlPlacement);
 	//loads eventTable from html
-	var htmlEventTable = document.getElementsByClassName("eventTable")[0];
+	var htmlEventTable = document.getElementById("eventLoader");
 	//removes static information from webpage
 	while (htmlEventTable.firstChild !== null) {
 	    htmlEventTable.removeChild(htmlEventTable.firstChild);

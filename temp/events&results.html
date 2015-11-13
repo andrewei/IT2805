@@ -1,48 +1,19 @@
 <!doctype html>
 <html>
 <head>
-    <title>Events and Results - Smash Trondheim</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="EventLoader.js"></script>
+    <script src="javascript/template.js"></script>
+    <script>
+        setTitle("Contact");
+        navLoc("");
+    </script> 
+
 </head>
-<body>
-    <div>
-        <header>
-            <img src="images/smash white.png" class="logo" alt="Logo" />
-            <h1 class="name">smash trondheim</h1>
-        </header>
-        <div class="navigation">
-            <nav class="nav">
-                <ul>
-                    <li><a href="main.html">Home</a></li>
-                    <li><a href="events&results.html">Events and Results</a></li>
-                    <li><a href="main.html">Games</a></li>
-                    <li><a href="main.html">Links</a></li>
-                    <li><a href="main.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+<body>    
 
-        <div class="content">
-            <div id="subpages">
-                <div id="recentEvents"> recentEvents
-                </div>
-
-                <div id="newEvents"> newEvents
-                </div>
-            </div>
-
-
-            <div class="eventTable">
-                
-            </div>
-
-
-        </div>
-
-        <footer>
-            Smash Trondheim, 2015
-        </footer>
-    </div>
+    <script>
+        setContent("eventLoader");
+    </script>
+        
+    <script src="EventLoader.js"></script>
 </body>
 </html>
