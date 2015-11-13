@@ -233,3 +233,18 @@ footer{
     bottom:1em;
     left:20%;
 }
+
+#eventLoader > .eventDiv {
+    text-align: center;
+    padding: 16px;
+} 
+
+#eventLoader > .eventDiv > .elementDivGame{
+    text-align: center;
+    padding: 5px;
+} 
+
+
+#eventLoader > .eventDiv > .elementDivName{
+    font-size: 2em;
+} 
