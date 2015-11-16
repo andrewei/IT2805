@@ -82,7 +82,7 @@ window.addEventListener("load", function () {
 	events.appendChild(info);
 	events.appendChild(results);
 	events.appendChild(tourn);
-	
+
 	document.getElementById("event").appendChild(nav);
 	document.getElementById("event").appendChild(eventList);
 	document.getElementById("event").appendChild(events);

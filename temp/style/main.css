@@ -298,10 +298,15 @@ footer{
 }
 
 #event > #innerNav > ul > li {
-    width:50%;
+    width:49%;
     float: left;
     display:inline;
 	/*height:1em;*/
+	border-bottom:1px solid white;
+}
+
+#event > #innerNav > ul > li:first-child {
+	border-right:1px solid white;
 }
 
 #event > #innerNav{
@@ -425,9 +430,125 @@ footer{
 	margin-bottom:1%;
 }*/
 
+#links{
+    width:100%;
+    margin:0 auto;
+    height:100%;
+    text-align:left;
+    color:white; /*#808080*/
+    position:relative;
+}
 
+#links > h1{
+    text-transform: uppercase;
+    font-size:4em;
+    line-height:1.5em;
+    margin-top:0;
+    display:inline;
+    padding:0.25em;
+}
 
+#links > ul {
+    list-style-type: none;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+	height:80%;
+}
 
+#links > ul > li > #headers {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+	font-size:2em;
+	margin-top:3%;
+	margin-bottom:1%;
+}
+
+#links > ul > li > #headersLink {
+    display: block;
+    font-weight: bold;
+    color: #ff6d04;
+    background-color: #000000;
+    padding: 4px;
+    text-transform: uppercase;
+	font-size:2em;
+	margin-top:3%;
+	margin-bottom:1%;
+}
+
+#links > ul > li > #text {
+    margin-left:6%;
+	margin-bottom:2%;
+	
+}
+
+#links > ul > li > li > #text {
+    margin-left:6%;
+	margin-bottom:2%;
+}
+
+#links > ul > li > li > #bold {
+    font-weight: bold;
+	font-size:1.5em;
+	margin-left:3%;
+}
+
+#links > ul > li > li > #bold > a {
+	/*text-decoration:none;*/
+	color: #ff6d04;
+}
+
+#contact{
+    width:100%;
+    margin:0 auto;
+    height:100%;
+    text-align:left;
+    color:white; /*#808080*/
+    position:relative;
+}
+
+#contact > h1{
+    text-transform: uppercase;
+    font-size:4em;
+    line-height:1.5em;
+    margin-top:0;
+    display:inline;
+    padding:0.25em;
+}
+
+#contact > p{
+    margin-top:0;
+    padding-left:2em;
+    padding-right:2em;
+}
+
+#contact > table{
+	text-align:center;
+    margin:0 auto;
+    margin-top:1em;
+	margin-bottom:1em;
+    /*border:1px solid #808080;*/
+    height: 4em;
+	width:90%;
+    table-layout: fixed;
+	border-collapse: collapse;
+}
+
+#contact > table > tr > td{
+	border-right:1px solid white;
+}
+
+#contact > table > tr > td:last-child{
+	border-right:0;
+}
 
 
 
