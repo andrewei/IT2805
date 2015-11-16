@@ -59,6 +59,10 @@ function linkJs(){
 	var js = document.createElement("script");
     js.src = navi + "javascript/window.js";
     document.getElementsByTagName("head")[0].appendChild(js);
+	var js = document.createElement("script");
+    js.src = navi + "javascript/hover.js";
+    document.getElementsByTagName("head")[0].appendChild(js);
+	
 }
 
 function linkStyle() {
