@@ -571,3 +571,7 @@ footer{
 #innerNav li {
     cursor: pointer;
 }
+
+#eventList li {
+    cursor: pointer;
+}
