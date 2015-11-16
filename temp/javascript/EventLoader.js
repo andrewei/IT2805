@@ -5,15 +5,16 @@ var nl1 = document.createElement("li");
 var nl2 = document.createElement("li");
 var newEvents = document.createElement("a");
 newEvents.innerHTML = "Nyeste Arrangementer";
-newEvents.onclick=function() { show(0); };
+newEvents.onclick=function() { if(activePos != 0) show(0); };
 var remEvents = document.createElement("a");
 remEvents.innerHTML = "Eldre Arrangementer";
-remEvents.onclick=function() { show(1); };
+remEvents.onclick=function() { if(activePos != 1) show(1); };
 nl1.appendChild(newEvents);
 nl2.appendChild(remEvents);
 navList.appendChild(nl1);
 navList.appendChild(nl2);
 nav.appendChild(navList);
+var activePos = 0;
 
 var eventList = document.createElement("div");
 eventList.id="eventList";
@@ -142,6 +143,7 @@ function selected(o){
 }
 
 function show(i){
+	activePos = i;
 	if(document.getElementById("eventList").hasChildNodes()){
    		document.getElementById("eventList").removeChild(document.getElementById("eventList").lastChild);
 	}
