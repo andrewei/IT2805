@@ -121,11 +121,17 @@ function selected(o){
         res1 = req.responseText;
     }
 	
-	document.getElementById("evTourn").innerHTML = null;
+	var tA = document.createElement("a");
+	tA.href = eve[o][3].nodeValue;
+	tA.innerHTML = "Facebook";
+	tA.target = "_blank";
+	console.log(tA);
 	
+	document.getElementById("evTourn").innerHTML = null;
 	document.getElementById("evName").innerHTML = eve[o][0].nodeValue;
 	document.getElementById("evDate").innerHTML = eve[o][1].nodeValue;
-	document.getElementById("evInfo").innerHTML = res1 + "\nLink: "+eve[o][3].nodeValue;
+	document.getElementById("evInfo").innerHTML = res1 + "<br>Link: ";
+	document.getElementById("evInfo").appendChild(tA);
 	document.getElementById("evResults").innerHTML = "Brackets/Results";
 	for(i=4;i<eve[o].length;i++){
 		var teLi = document.createElement("li");
