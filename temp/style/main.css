@@ -567,3 +567,7 @@ footer{
 #eventLoader > .eventDiv > .elementDivName{
     font-size: 2em;
 } 
+
+#innerNav li {
+    cursor: pointer;
+}
