@@ -1,0 +1,119 @@
+<events>
+
+	<event>
+		<name>New Event 5</name>
+		<date>25-07-2016</date>
+		<info>newEvent5</info>
+		<facebooklink>http://www.google.com</facebooklink>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>Sm4sh Wii U Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+
+	</event>
+
+	<event>
+		<name>New Event 4</name>
+		<date>24-03-2016</date>
+		<info>newEvent4</info>
+		<facebooklink>http://www.google.com</facebooklink>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>Sm4sh Wii U Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+	</event>
+
+	<event>
+		<name>New Event 3</name>
+		<date>25-03-2016</date>
+		<info>newEvent3</info>
+		<facebooklink>http://www.google.com</facebooklink>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>Sm4sh Wii U Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+	</event>
+
+	<event>
+		<name>New Event 2</name>
+		<date>25-03-2016</date>
+		<info>newEvent2</info>
+		<facebooklink>http://www.google.com</facebooklink>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>Sm4sh Wii U Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+	</event>
+	<event>
+		<name>New Event 1</name>
+		<date>24-03-2017</date>
+		<info>newEvent1</info>
+		<facebooklink>http://www.google.com</facebooklink>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>Sm4sh Wii U Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+	</event>
+	<event>
+		<name>Old Event 1</name>
+		<date>25-03-2014</date>
+		<info>oldEvent1</info>
+		<facebooklink>http://www.google.com</facebooklink>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>Sm4sh Wii U Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+	</event>
+	<event>
+		<name>Old Event 2</name>
+		<date>24-03-2014</date>
+		<info>oldEvent2</info>
+		<facebooklink>http://www.google.com</facebooklink>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>Sm4sh Wii U Tournament</description>
+			<results>http://www.google.com</results>
+		</game>
+	</event>
+</events>

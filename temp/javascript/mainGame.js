@@ -47,7 +47,7 @@ ul.appendChild(li4);
 window.addEventListener("load", function () {
     var res;
     var req = new XMLHttpRequest();
-    req.open('GET', 'gameText/main.txt', false);
+    req.open('GET', 'games/gameText/main.txt', false);
     req.send(null);
     if (req.status !== 200) {
         res = null;

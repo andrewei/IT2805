@@ -52,6 +52,13 @@ function setContent(type) {
 function navLoc(size) {
     navi = size;
     linkStyle();
+	linkJs();
+}
+
+function linkJs(){
+	var js = document.createElement("script");
+    js.src = navi + "javascript/window.js";
+    document.getElementsByTagName("head")[0].appendChild(js);
 }
 
 function linkStyle() {

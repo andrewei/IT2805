@@ -13,16 +13,16 @@ body > header{
 
 body > .navigation{
     text-align:center;
-    width: 60%;
+    width: 75%;
 }
 
 header > .logo{
     display:inline;
-    width:15%;
+    width:10%;
     height:auto%;
     -webkit-filter: drop-shadow(5px 5px 15px #ff6d04);
     filter: drop-shadow(5px 5px 15px #ff6d04);
-    margin:1em 2.3% 0em 2.3%;
+    margin:1em 1.1% 0em 1.1%;
     border-radius: 100%;
     border:2px solid #ff6a00;
     float:left;
@@ -32,7 +32,7 @@ header > .name{
     display:inline;
     text-transform: uppercase;
     font-size:5em;
-    line-height:2em;
+    line-height:1.7em;
     font-weight:bolder;
     vertical-align:middle;
     color:#ffffff;
@@ -45,7 +45,7 @@ footer{
     color:white; /*#808080*/
 	background-color:black;
 	margin:0 auto;	
-	width: 60%;
+	width: 75%;
     border:2px solid white;
 }
 
@@ -65,7 +65,7 @@ footer{
 
 .navigation{
     border:2px solid white;
-    width:60%;
+    width:75%;
     margin:0 auto;
 }
 
@@ -86,15 +86,15 @@ footer{
 .content{
     background-color: black;
     border:2px solid white;
-    width:60%;
+    width:75%;
     margin:0 auto;
     text-align:center;
-    height:43em;
+    height:46em;
     text-align:left;
     color:white; /*#808080*/
 }
 
-.content p{
+.content > p{
     padding-left:3em;
     padding-right:3em;
 }
@@ -233,6 +233,203 @@ footer{
     bottom:1em;
     left:20%;
 }
+
+#event{
+    width:100%;
+    margin:0 auto;
+    height:100%;
+    text-align:left;
+    color:white; /*#808080*/
+    position:relative;
+}
+
+#event > h1{
+    text-transform: uppercase;
+    font-size:4em;
+    line-height:1.5em;
+    margin-top:0;
+    display:inline;
+    padding:0.25em;
+}
+
+#event > p{
+    margin-top:0;
+    padding-left:2em;
+    padding-right:2em;
+}
+
+#event > ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    width:40%;
+    display:block;
+    /*left:20%;*/
+}
+
+#event > ul > li {
+    width:50%;
+    float: left;
+    display:inline;
+}
+
+#event > ul > li > a {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#event > ul > li > a > img {
+    width:100%;
+}
+
+#event > #innerNav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+}
+
+#event > #innerNav > ul > li {
+    width:50%;
+    float: left;
+    display:inline;
+	/*height:1em;*/
+}
+
+#event > #innerNav{
+    /*border:2px solid white;*/
+    margin:0 auto;
+    text-align:center;
+    width: 40%;
+	height:5%;
+}
+
+#event > #innerNav > ul > li > a{
+    display: block;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+	margin:0.5em 0 0.5em 0;
+}
+
+#event > #eventList > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+}
+
+#event > #eventList > ul > li {
+    width:20%;
+    float: left;
+    display:inline;
+	/*height:1em;*/
+}
+
+#event > #eventList{
+    /*border:2px solid white;*/
+    margin:0 auto;
+    text-align:center;
+    width: 80%;
+	height:8%;
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+#event > #eventList > ul > li > div > h2{
+    margin:0;
+}
+
+#event > #eventList > ul > li > div > h3{
+    margin:0;
+}
+
+#event > #eventList > select{
+	width:30%;
+}
+
+#event > #tournaments{
+    /*border:2px solid white;*/
+    margin:0 auto;
+    /*text-align:center;*/
+    width: 100%;
+	height:87%;
+}
+
+#event > #tournaments > h1{
+	margin-left:1%;
+	margin-bottom:0;
+}
+
+#event > #tournaments > h3{
+	margin-left:1%;
+	margin-top:0;
+}
+
+#event > #tournaments > p{
+	margin-left:3%;
+}
+
+#event > #tournaments > h2{
+	margin-left:1%;
+}
+
+#event > #tournaments > ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    width:90%;
+}
+
+#event > #tournaments > ul > li {
+    width:20%;
+    float: left;
+    display:inline;
+	/*height:1em;*/
+}
+
+#event > #tournaments > ul > li > a{
+    display: block;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+	margin:0.5em 0 0.5em 0;
+}
+
+#event > #tournaments > ul > li > a > img{
+	width:100%;
+}
+
+
+/*#event > #tournaments{
+    border:2px solid white;
+    margin:0 auto;
+    text-align:center;
+    width: 80%;
+	height:8%;
+	margin-top:1%;
+	margin-bottom:1%;
+}*/
+
+
+
+
+
+
 
 #eventLoader > .eventDiv {
     text-align: center;

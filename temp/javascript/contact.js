@@ -23,8 +23,6 @@ window.addEventListener("load", function () {
     } else {
         res2 = req.responseXML;
     }
-
-    console.log(res2);
     
     var x = res2.getElementsByTagName("contact");
 
