@@ -1,119 +1,216 @@
 <events>
 
 	<event>
-		<name>New Event 5</name>
-		<date>25-07-2016</date>
-		<info>newEvent5</info>
-		<facebooklink>http://www.google.com</facebooklink>
-		<game>
-			<picture>melee</picture>
-			<description>Melee Tournament</description>
-			<results>http://www.google.com</results>
-		</game>
-		<game>
-			<picture>wiiu</picture>
-			<description>Sm4sh Wii U Tournament</description>
-			<results>http://www.google.com</results>
-		</game>
-
+		<name>[TM03] - Swords Dance</name>
+		<date>21-11-2015</date>
+		<info>tm03</info>
+		<facebooklink>https://www.facebook.com/events/494844694022998/</facebooklink>
 	</event>
 
 	<event>
-		<name>New Event 4</name>
-		<date>24-03-2016</date>
-		<info>newEvent4</info>
-		<facebooklink>http://www.google.com</facebooklink>
+		<name>Tihlde Lan</name>
+		<date>06-11-2015</date>
+		<info>tihldeLan</info>
+		<facebooklink>https://www.facebook.com/events/1477836535856553/</facebooklink>
 		<game>
 			<picture>melee</picture>
-			<description>Melee Tournament</description>
-			<results>http://www.google.com</results>
+			<description>Melee Singles</description>
+			<results>http://smashtrondheim.challonge.com/tihldenov15meleesingles</results>
 		</game>
 		<game>
 			<picture>wiiu</picture>
-			<description>Sm4sh Wii U Tournament</description>
-			<results>http://www.google.com</results>
+			<description>WiiU Singles</description>
+			<results>http://smashtrondheim.challonge.com/tihldenov15wiiusingles</results>
 		</game>
-	</event>
-
-	<event>
-		<name>New Event 3</name>
-		<date>25-03-2016</date>
-		<info>newEvent3</info>
-		<facebooklink>http://www.google.com</facebooklink>
 		<game>
-			<picture>melee</picture>
-			<description>Melee Tournament</description>
-			<results>http://www.google.com</results>
+			<picture>pm</picture>
+			<description>PM Singles</description>
+			<results>http://smashtrondheim.challonge.com/tihldenov15p,singles</results>
+		</game>
+		<game>
+			<picture>brawl</picture>
+			<description>Brawl Singles</description>
+			<results>http://smashtrondheim.challonge.com/tihldenov15brawlsingles</results>
 		</game>
 		<game>
 			<picture>wiiu</picture>
-			<description>Sm4sh Wii U Tournament</description>
-			<results>http://www.google.com</results>
+			<description>WiiU Doubles</description>
+			<results>http://smashtrondheim.challonge.com/tihldenov15wiiudubz</results>
+		</game>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Doubles</description>
+			<results>http://smashtrondheim.challonge.com/tihldenov15meleedubz</results>
 		</game>
 	</event>
 
 	<event>
-		<name>New Event 2</name>
-		<date>25-03-2016</date>
-		<info>newEvent2</info>
-		<facebooklink>http://www.google.com</facebooklink>
+		<name>S@NG 51</name>
+		<date>31-10-2015</date>
+		<info>s@ng51</info>
+		<facebooklink>https://www.facebook.com/events/186056375064867/</facebooklink>
 		<game>
 			<picture>melee</picture>
-			<description>Melee Tournament</description>
-			<results>http://www.google.com</results>
+			<description>Melee Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang51melee</results>
+		</game>
+		<game>
+			<picture>brawl</picture>
+			<description>Brawl Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang51brawl</results>
+		</game>
+		<game>
+			<picture>pm</picture>
+			<description>PM Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang51pm</results>
 		</game>
 		<game>
 			<picture>wiiu</picture>
-			<description>Sm4sh Wii U Tournament</description>
-			<results>http://www.google.com</results>
+			<description>WiiU Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang51wiiu</results>
 		</game>
 	</event>
+
 	<event>
-		<name>New Event 1</name>
-		<date>24-03-2017</date>
-		<info>newEvent1</info>
-		<facebooklink>http://www.google.com</facebooklink>
+		<name>S@NG 50</name>
+		<date>24-10-2015</date>
+		<info>s@ng50</info>
+		<facebooklink>https://www.facebook.com/events/1105201996157465/</facebooklink>
 		<game>
 			<picture>melee</picture>
-			<description>Melee Tournament</description>
-			<results>http://www.google.com</results>
+			<description>Melee Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang50melee</results>
+		</game>
+		<game>
+			<picture>brawl</picture>
+			<description>Brawl Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang50brawl</results>
 		</game>
 		<game>
 			<picture>wiiu</picture>
-			<description>Sm4sh Wii U Tournament</description>
-			<results>http://www.google.com</results>
+			<description>WiiU Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang50wiiu</results>
 		</game>
 	</event>
+	
 	<event>
-		<name>Old Event 1</name>
-		<date>25-03-2014</date>
-		<info>oldEvent1</info>
-		<facebooklink>http://www.google.com</facebooklink>
+		<name>S@NG 49</name>
+		<date>17-10-2015</date>
+		<info>s@ng49</info>
+		<facebooklink>https://www.facebook.com/events/1171026062913779/</facebooklink>
 		<game>
 			<picture>melee</picture>
-			<description>Melee Tournament</description>
-			<results>http://www.google.com</results>
+			<description>Melee Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang49melee</results>
+		</game>
+		<game>
+			<picture>brawl</picture>
+			<description>Brawl Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang49brawl</results>
 		</game>
 		<game>
 			<picture>wiiu</picture>
-			<description>Sm4sh Wii U Tournament</description>
-			<results>http://www.google.com</results>
+			<description>WiiU Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang49wiiu</results>
 		</game>
 	</event>
+	
 	<event>
-		<name>Old Event 2</name>
-		<date>24-03-2014</date>
-		<info>oldEvent2</info>
-		<facebooklink>http://www.google.com</facebooklink>
+		<name>S@NG 48</name>
+		<date>03-10-2015</date>
+		<info>s@ng48</info>
+		<facebooklink>https://www.facebook.com/events/874271669346605/</facebooklink>
 		<game>
 			<picture>melee</picture>
-			<description>Melee Tournament</description>
-			<results>http://www.google.com</results>
+			<description>Melee Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang48melee</results>
+		</game>
+		<game>
+			<picture>brawl</picture>
+			<description>Brawl Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang48bs</results>
 		</game>
 		<game>
 			<picture>wiiu</picture>
-			<description>Sm4sh Wii U Tournament</description>
-			<results>http://www.google.com</results>
+			<description>WiiU Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang48wiiu</results>
 		</game>
 	</event>
+	
+	<event>
+		<name>S@NG 47</name>
+		<date>26-09-2015</date>
+		<info>s@ng47</info>
+		<facebooklink>https://www.facebook.com/events/959364757455982/</facebooklink>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang47ms</results>
+		</game>
+		<game>
+			<picture>brawl</picture>
+			<description>Brawl Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang47bs</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>WiiU Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang47wus</results>
+		</game>
+	</event>
+	
+	<event>
+		<name>S@NG 46</name>
+		<date>19-09-2015</date>
+		<info>s@ng46</info>
+		<facebooklink>https://www.facebook.com/events/1651127805098860/</facebooklink>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang46melee</results>
+		</game>
+		<game>
+			<picture>brawl</picture>
+			<description>Brawl Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang46brawl</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>WiiU Singles</description>
+			<results>http://smashtrondheim.challonge.com/sang46wiiu</results>
+		</game>
+	</event>
+	
+	<event>
+		<name>[TM01] - Mega Punch</name>
+		<date>12-09-2015</date>
+		<info>tm01</info>
+		<facebooklink>https://www.facebook.com/events/1633911406869290/</facebooklink>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Singles</description>
+			<results>http://smashtrondheim.challonge.com/tm01meleesingles</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>WiiU Singles</description>
+			<results>http://smashtrondheim.challonge.com/tm01usingles</results>
+		</game>
+		<game>
+			<picture>brawl</picture>
+			<description>Brawl Singles</description>
+			<results>http://smashtrondheim.challonge.com/tm01bsingles</results>
+		</game>
+		<game>
+			<picture>wiiu</picture>
+			<description>WiiU Doubles</description>
+			<results>http://smashtrondheim.challonge.com/tm01udubz</results>
+		</game>
+		<game>
+			<picture>melee</picture>
+			<description>Melee Doubles</description>
+			<results>http://smashtrondheim.challonge.com/tm01mdubz</results>
+		</game>
+	</event>
+	
 </events>

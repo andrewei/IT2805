@@ -32,7 +32,12 @@ window.addEventListener("load", function () {
         res2 = req.responseText;
     }
 
-    title.innerHTML = game;
+    if(game == "wiiu"){
+		title.innerHTML = "Smash 4 Wii U";
+	}else{
+		title.innerHTML = game;
+	}
+	
     img.src = "../images/" + game + ".png";
     text.innerHTML = res1;
     vid.src = res2 + "?modestbranding=1&;showinfo=0&;autohide=1&;rel=0;";

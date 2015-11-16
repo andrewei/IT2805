@@ -135,6 +135,7 @@ function selected(o){
 		teA.appendChild(teIm);
 		teA.innerHTML += eve[o][i][1].nodeValue;
 		teA.href = eve[o][i][2].nodeValue;
+		teA.target = "_blank";
 		teLi.appendChild(teA);
 		document.getElementById("evTourn").appendChild(teLi);
 	}
@@ -145,6 +146,12 @@ function show(i){
    		document.getElementById("eventList").removeChild(document.getElementById("eventList").lastChild);
 	}
 	if(i==0){
+		document.getElementById("evTourn").innerHTML = "";
+		document.getElementById("evName").innerHTML = "";
+		document.getElementById("evDate").innerHTML = "";
+		document.getElementById("evInfo").innerHTML = "";
+		document.getElementById("evResults").innerHTML = "";
+		
 		drop = document.createElement("select");
 		drop.addEventListener('change', function() { selected(drop.selectedIndex+5) });
 	for(k=0;k<5;k++){
