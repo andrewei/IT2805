@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	<link href='http://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'>
+ 		 <meta charset="utf-8">  
+   		 <title>P3 Design Changes</title>
+   		 <link href="p3.css" rel="stylesheet">  
+	</head>
+
+	<body>
+	
+	<header>
+	<h1>P3 Design Changes</h1>
+	</header>
+	
+	<section>
+		<h2> 1. Document Details </h2>
+		
+			<p> P3 Changes </p>
+			<p> Hov, Lindgren, Snellingen, Weisethaunet, Zemer</p>
+			<p> IT2805 November 2015 </p>	
+	</section>
+	
+	<section>
+		<h2> 2. Administrative Details </h2>
+		
+		<p> Client Name: Smash Trondheim </p>
+		<p> Website Name: Smash Trondheim</p>
+		<p> Contact person: Knutsen, Bernt </p>
+		<p> Link to our website: <a href="http://ntnu.xxxxx">click here</a> </p>
+		
+	</section>
+	
+	<section>
+
+<h1> The changes we have made </h1>
+
+<p>Our original plan was to make 10 pages, but during development we realised that combining 2 of them made
+it easier with regards to javascript. We ended up with a total of 9 pages. Due to customer feedback, we also
+changed the skeleton/template page as well as the core hierarchically structure and use of input.</p>
+
+<p><strong>Core:</strong> Some feedback we recieved was that since the content may change and the customer do not necessarily
+have enough technical knowledge to change HTML, we decided to create inputs of static text. The inputs are txt-files that contains 
+static text that can be edited. The corresponding Javascript-file will find the file and place the content in its rightful HTML.</p>
+
+<p><strong>Skeleton/template:</strong> Some of the things we changed in our original styling has been due to feedback, and some changes were 
+evaluated and decided by us.
+
+	<ul>
+		<li>Background-image: We used a stock image while we waited for an image from our customer, but seeing that 
+        it is still not ready and we do not have a licence for the stock photo, we removed the image. It is still 
+        possible to put in a new picture later.</li>
+		<li>Game page: Due to the use of Javascript files, we did get a navbar consisting of smash logos that linked 
+        to the corresponding game-page. However, they were different files and with the placement in the hierarchy we 
+        decided to not have the navbar in the subgames, removing the need for the selected logo to glow.
+		<li>Body width: We changed the body width from 60% to 75% of the screen, more so for text to be bigger and more distinctive of 
+        each other than size-issues</li>
+		<li>Navbar: The navbar does not have a selected item, nor does that item change color. Since we increased body size, the pages were 
+        large enough for content to fit on one screen and we made a title element for the pages instead to say which page it is on. </li>
+		<li>Banner: The logo is now on the completely left side of the screen, with the text being still to the right, but on the left side 
+        of the body.</li>
+		<li>Logo: The logo has been changed to a supplied image from Smash Trondheim.</li>
+	</ul>
+
+</p>
+
+
+<p><strong>Changes to main.html:</strong> The old logo is now present in top right corner. We have also decided to not show the video on this page, 
+with the reasons being that the video is already located in a subpage of games and the space could instead by used to give critical and important messages.</p>
+
+<p><strong>Changes to events&results.html:</strong> This design was majorly changed after internally discussing the logical aspect of reported design. The new design 
+is based on three rows. The first row is still the links between eachother. The second row is really the only row that changes between links. In recent events there is the 5 events with the newest date (including future), while in remaining events these 5 have been replaced by a single drop down menu which has all other events stored. The third row is where info on the event is stored. Name, date, info(from txt-file), link and a horizontal list of all the brackets or resultpages. This row changes dynamically based on selected event in both subsections of the page.</p>
+
+<p><strong>Changes to games.html:</strong> In every game-page, it is no direct link. It is only written which site is used to write about the game, not the specified links to the site.</p>
+
+<p><strong>Changes to contact.html:</strong> The time did not allow us to develop the form, but that may be something that can be done seperately in the future as the page has space to fit the form.</p>
+
+
+
+<p><strong>Changes to 1st required JS 'contentLoader.js':</strong> Due to new design, the selected game does not glow. </p>
+
+<p><strong>Changes to 2nd required JS 'buttonAnimate.js':</strong> We realized that this was not only difficult to develop, but also disturbing to users. We made a mouseover event with it instead.</p>
+
+<p><strong>Changes to 4nd required JS 'eventBox.js':</strong>Due to time-constraint, we had to prioritize. This js was not as importent and was sadly not developed in time.</p>
+
+<p><strong>Additional Javascript files</strong> We made several other javascript files as every html-file has their own unique js-file in addition to template.js. A lot of these js-files use the same types of function, but they are all based on what is needed for the html file. We could have seperated them into their own js-files, but it was easier this way. Functionality includes creating elements, removing elements, dynamically changing elements, reading files (both txt and xml) and working on the responses, insert data into elements and show elements on screen.</p>
+
+
+<p><strong>Modularity Requirement:</strong> We used one html-file (template.html) and one js-file (template.js) to create a template which all other html could use. By importing the js-file and calling 3 functions with parameters the html would have imported the entirety of template.html and also been connected to the ONLY css we have. We also managed to connect another javascript in the template and so, every html who uses template.js would also use hover.js.</p>
+</section>
+	
+	<section>
+		
+		<h3> Updated Organizational Scheme </h3>
+		
+		<p> All of the following files are gathered inside a folder <em>'beta'</em>. </p>
+		
+		
+		<p> List of Files and Folders
+		<ul>
+			<li>main.html</li>		
+			<li>events&results.html</li> 
+			<li>games.html</li>
+			<li>links.html</li>
+			<li>contact.html</li>
+			<li>template.html </li>
+            <li>images/
+				<ul>
+				<li>brawl.png</li>
+				<li>melee.png</li>
+				<li>pm.png</li>
+				<li>wiiu.png</li>
+				<li>SLogo.png</li>
+				<li>smash white.png</li>
+				</ul>
+				</li>
+			<li>javascript/
+				<ul>
+				<li>contact.js</li>
+				<li>EventLoader.js</li>
+				<li>games.js</li>
+                <li>home.js</li>
+                <li>hover.js</li>
+                <li>hoverInner.js</li>
+                <li>links.js</li>
+                <li>mainGame.js</li>
+                <li>template.js</li>
+				</ul>
+			<li>style/
+				<ul>
+				<li>main.css</li>
+				</ul>	
+				</li>
+			<li>text/
+				<ul>
+				<li>home.txt</li>
+				</ul>
+            <li>events&results/
+				<ul>
+                <li>info/
+                	<ul>
+                    <li>s@ng46.txt</li>
+                    <li>s@ng47.txt</li>
+                    <li>s@ng48.txt</li>
+                    <li>s@ng49.txt</li>
+                    <li>s@ng50.txt</li>
+                    <li>s@ng51.txt</li>
+                    <li>tihldeLan.txt</li>
+                    <li>tm01.txt</li>
+                    <li>tm03.txt</li>
+                    </ul>
+				<li>Events.xml</li>
+				</ul>
+            <li>games/
+				<ul>
+               	<li>gameLinks/
+					<ul>
+					<li>brawl.txt</li>
+					<li>melee.txt</li>
+					<li>pm.txt</li>
+    	            <li>wiiu.txt</li>
+					</ul>
+                <li>gameText/
+					<ul>
+                    <li>main.txt</li>
+					<li>brawl.txt</li>
+					<li>melee.txt</li>
+					<li>pm.txt</li>
+    	            <li>wiiu.txt</li>
+					</ul>
+				<li>brawl.html</li>
+				<li>melee.html</li>
+				<li>pm.html</li>
+                <li>wiiu.html</li>
+				</ul>
+            <li>links/
+				<ul>
+				<li>links/
+					<ul>
+                    <li>challonge.txt</li>
+					<li>facebook.txt</li>
+					<li>smashboards.txt</li>
+					<li>smashrankings.txt</li>
+    	            <li>twitch.txt</li>
+                    <li>youtube.txt</li>
+					</ul>
+                <li>text/
+					<ul>
+                    <li>challonge.txt</li>
+					<li>facebook.txt</li>
+					<li>smashboards.txt</li>
+					<li>smashrankings.txt</li>
+    	            <li>twitch.txt</li>
+                    <li>youtube.txt</li>
+					</ul>
+				</ul>
+            <li>contact/
+				<ul>
+				<li>contacts.xml</li>
+				<li>text.txt</li>
+				</ul>
+
+		</ul>
+		
+		<h3>Final Work Division</h3>
+		
+		<table>
+			<thead>
+				<tr> 
+					<th> Filename </th>
+					<th> Description </th>
+					<th> In charge </th>
+				
+				</tr>
+			
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>main.html</td>
+					<td>The homepage</td>
+					<td>Patricia</td>
+				
+				</tr>
+				<tr>
+					<td>events&results.html</td>
+					<td>All events and their respective tournaments</td>
+					<td>Andreas</td>
+				
+				</tr>
+				<tr>
+					<td>games.html</td>
+					<td>Info on games that we play in tournaments.</td>
+					<td>Joakim</td>
+				
+				</tr>
+				<tr>
+					<td>links.html</td>
+					<td>Links to other relevant webpages</td>
+					<td>Lars</td>
+				
+				</tr>
+				<tr>
+					<td>contact.html</td>
+					<td>Boardmembers and their contact-information</td>
+					<td>Einar</td>
+				
+				</tr>
+				<tr>
+					<td>template.html</td>
+					<td>The template used in all other pages</td>
+					<td>Patricia and Lars</td>
+				
+				</tr>
+				<tr>
+					<td>contact.js</td>
+					<td>Javascript for contact.html</td>
+					<td>Einar</td>
+				
+				</tr>
+                <tr>
+					<td>EventLoader.js</td>
+					<td>Javascript for events&results.html</td>
+					<td>Andreas</td>
+				
+				</tr>
+                <tr>
+					<td>games.js</td>
+					<td>Javascript for subpages of games.html</td>
+					<td>Joakim</td>
+				
+				</tr>
+                <tr>
+					<td>home.js</td>
+					<td>Javascript for home.html</td>
+					<td>Patricia</td>
+				
+				</tr>
+                <tr>
+					<td>hover.js</td>
+					<td>Javascript for navigation in template.html</td>
+					<td>Andreas</td>
+				
+				</tr>
+                <tr>
+					<td>hoverInner.js</td>
+					<td>Javascript for the inner navigation in events&results.html</td>
+					<td>Andreas</td>
+				
+				</tr>
+				<tr>
+					<td>links.js</td>
+					<td>Javascript for links.html</td>
+					<td>Lars</td>
+				
+				</tr>
+                <tr>
+					<td>mainGame.js</td>
+					<td>Javascript for games.html</td>
+					<td>Lars</td>
+				
+				</tr>
+				<tr>
+					<td>template.js</td>
+					<td>Javascript for template.html</td>
+					<td>Einar and Joakim</td>
+				
+				</tr>
+				<tr>
+					<td>main.css</td>
+					<td>CSS containing all styling for the website</td>
+					<td>All</td>
+				
+				</tr>
+			</tbody>
+		
+		</table>
+		
+		</section>
+
+	  <footer>
+ 	  </footer>
+ 	  <p>
+</p>
+        
+	</body>
+	
+
+	
+</html>
